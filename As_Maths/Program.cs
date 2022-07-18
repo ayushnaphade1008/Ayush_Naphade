@@ -22,8 +22,21 @@ Console.WriteLine($"substraction is {subn}");
 Console.WriteLine($"Multiplication is {muln}");
 Console.WriteLine($"division is {divn}");
 Console.WriteLine($"Square of first number is {fnum * fnum} and square of second number is {snum * snum}");
+/*
+double Power = power(fnum, snum);
+Console.WriteLine($"Power of recursive function is {Power}");
 
+static double power(int fnum,int snum)
+{
 
+    for (int i = 1; i<=snum; i++)
+    {
+        fnum= (int)((fnum) * power(fnum,snum));
+    }
+    return fnum;
+}
+
+*/
 
 
 
