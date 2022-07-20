@@ -15,13 +15,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AS_Strings", "AS_Strings\AS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ref_out_param", "ref_out_param\ref_out_param.csproj", "{C6493D4A-5027-4AC5-AF7F-CE674904EA7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS_OPPs", "AS_OPPs\AS_OPPs.csproj", "{7C5F68F7-63D9-4B83-B517-7A8B676A2CDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AS_OPPs", "AS_OPPs\AS_OPPs.csproj", "{7C5F68F7-63D9-4B83-B517-7A8B676A2CDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS_ArrayListStringGeneric", "AS_ArrayListStringGeneric\AS_ArrayListStringGeneric.csproj", "{803A4765-91CC-4A32-AC1B-18784512A43F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AS_ArrayListStringGeneric", "AS_ArrayListStringGeneric\AS_ArrayListStringGeneric.csproj", "{803A4765-91CC-4A32-AC1B-18784512A43F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D6D3D718-F84F-4A26-A841-0A9D369221EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{D6D3D718-F84F-4A26-A841-0A9D369221EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS_ArrStrGeneric", "AS_ArrStrGeneric\AS_ArrStrGeneric.csproj", "{843C94D1-503E-4AD4-B6B8-E92AF6820D1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AS_ArrStrGeneric", "AS_ArrStrGeneric\AS_ArrStrGeneric.csproj", "{843C94D1-503E-4AD4-B6B8-E92AF6820D1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "pas_staticprivateconstructor", "pas_staticprivateconstructor\pas_staticprivateconstructor.csproj", "{E1B2C125-0E31-4DA5-88A0-12CD568FAA9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS_Basic_Class", "CS_Basic_Class\CS_Basic_Class.csproj", "{6431C3AE-5138-4F1F-ADF9-AD79A5A02A98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS_Inheritance", "AS_Inheritance\AS_Inheritance.csproj", "{6240C077-66DF-4DAD-AB0F-0B92437C96EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +71,18 @@ Global
 		{843C94D1-503E-4AD4-B6B8-E92AF6820D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{843C94D1-503E-4AD4-B6B8-E92AF6820D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{843C94D1-503E-4AD4-B6B8-E92AF6820D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B2C125-0E31-4DA5-88A0-12CD568FAA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B2C125-0E31-4DA5-88A0-12CD568FAA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B2C125-0E31-4DA5-88A0-12CD568FAA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B2C125-0E31-4DA5-88A0-12CD568FAA9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6431C3AE-5138-4F1F-ADF9-AD79A5A02A98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6431C3AE-5138-4F1F-ADF9-AD79A5A02A98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6431C3AE-5138-4F1F-ADF9-AD79A5A02A98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6431C3AE-5138-4F1F-ADF9-AD79A5A02A98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6240C077-66DF-4DAD-AB0F-0B92437C96EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6240C077-66DF-4DAD-AB0F-0B92437C96EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6240C077-66DF-4DAD-AB0F-0B92437C96EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6240C077-66DF-4DAD-AB0F-0B92437C96EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
