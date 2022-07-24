@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace AS_Inheritance.Logic
 {
-    internal class Class1
+    public class TechnicianLogic
     {
+
+        Dictionary<string, Model.Technician> DictionaryTechnician;
+        public TechnicianLogic()
+        {
+            DictionaryTechnician = new Dictionary<string, Model.Technician>();
+
+        }
     }
 }

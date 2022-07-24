@@ -25,44 +25,55 @@ string  string_name = "The James Bond series focuses on a fictional British Secr
 
 
 int count_statement = 0;
-int count_word = 0;
+int count_word;
 int count_space = 0;
+
+
 for (int i1 = 0; i1 < string_name.Length; i1++)
 {
-    char i = string_name[i1];
-    if (i.Equals('.'))
+   
+    if (string_name[i1].Equals('.'))
     {
-        count_statement += 1;
+        count_statement ++;
     }
+   /* string[] str_split_1 = string_name.Split(' ');
+    for (int i = 0; i < str_split_1.Length; i++)
+    {
+        if (str_split_1[i].Contains("Dr.") || str_split_1[i].Contains(".edu") )
+        {
+            count_statement--;
+        }
+    }*/
 }
 Console.WriteLine($"The number of statements are {count_statement}");
-for (int i2 = 0; i2 < string_name.Length; i2++)
-{
-    char j = string_name[i2];
-    if (j.Equals(' ')||  j.Equals('.'))
-    {
-        count_word += 1;
-    }
-}
-Console.WriteLine($"The number of words are {count_word}");
+
 
 for (int i2 = 0; i2 < string_name.Length; i2++)
 {
-    char j = string_name[i2];
-    if (j.Equals(' '))
+    
+    if (string_name[i2].Equals(' '))
     {
         count_space += 1;
     }
 }
 Console.WriteLine($"The number of spaces are {count_space}");
 
-string[] str_split =  string_name.Split(' ');
+
+string[] str_split = string_name.Split(' ');
+count_word = str_split.Length;
+Console.WriteLine();
+Console.WriteLine($"The number of wordcounts are {count_word}");
+Console.WriteLine();
+
+
+
 foreach (string str in str_split)
 {
     string upd_string = char.ToUpper(str[0]) + str.Substring(1);
    // string final_string = string.Join(" ", upd_string);
     Console.Write(upd_string + " ");
 }
+Console.WriteLine();
 Console.WriteLine();
 
 for (int i2 = 0; i2 < string_name.Length; i2++)
@@ -75,15 +86,16 @@ for (int i2 = 0; i2 < string_name.Length; i2++)
     }
 }
 
-string spe_char = "@!#$%&/\\|()=?»«@£§€{}\".-;'<>_,";
-foreach (char ch in spe_char)
+string CharTOCeck = "@!#$%&/\\|()=?»«@£§€{}\".-;'<>_,";
+foreach (char ch in CharTOCeck)
 {
     if (string_name.Contains(ch))
     {
-        Console.Write(ch + " ");
+        Console.WriteLine($"Special character is {ch}");
     }
 }
-Console.ReadLine();
+
+
 
 
 

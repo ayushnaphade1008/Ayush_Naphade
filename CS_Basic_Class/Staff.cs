@@ -62,10 +62,10 @@ namespace CS_Basic_Class
                     if (count == 1)
                     {
                         Console.WriteLine("You have enterd invalid Name");
-                        Console.WriteLine("Enter Correct Name");
+                        Console.WriteLine("Enter Correct Name:");
                         string UpdatedString = Console.ReadLine();
                         value = UpdatedString;
-
+                        //we can also apply break here
                     }
 
                     else
@@ -90,30 +90,54 @@ namespace CS_Basic_Class
             get { return _DeptName; }
             set
             {
-                if (value == "Cancer" || value == "Heart" || value == "Pathology" || value == "Radiology" || value == "Blood Bank" || value == "Organ" || value == "Orthopeic" || value == "Eye" || value == "Dental")
+                bool temp = true;
+                while (temp)
                 {
-                    _DeptName = value;
-                }
-                else
-                {
-                    Console.WriteLine("Entered Incorrect Department");
+                    string[] deptname = { "Cancer",  "Radiology", "Orthopeic", "BloodBank", "Pathology", "Organs", "Eye", "Heart", "Dental" };
+                    foreach (string var in deptname)
+                    {
+                        if (var == value)
+                        {
+                            temp = false;
+                            _DeptName = value;
+                            break;
+                        }
+                    }
+                    if (temp == true)
+                    {
+                        Console.WriteLine("\nEnter the Department Again : ");
+                        string UpdatedValueDept = Console.ReadLine();
+                        value = UpdatedValueDept;
+                    }
                 }
             }
         }
+        
         private string _Gender = string.Empty;
         public string Gender
         {
             get { return _Gender; }
             set
             {
-                if (value == "Male" || value == "Female" || value == "Transgender")
+                bool temp = true;
+                while (temp)
                 {
-                    _Gender = value;
-                }
-                else
-                {
-                    Console.WriteLine("Enter Correct Gender(Male/Female/Transgender)");
-
+                    string[] Gendername = {"Male", "Female","TransGeder" };
+                    foreach (string var in Gendername)
+                    {
+                        if (var== value)
+                        {
+                            temp = false;
+                            _Gender = value;
+                            break;
+                        }
+                    }
+                    if (temp == true)
+                    {
+                        Console.WriteLine("\nEnter Gender Again : ");
+                        string UpdatedGender = Console.ReadLine();
+                        value = UpdatedGender;
+                    }
                 }
             }
         }
@@ -132,21 +156,11 @@ namespace CS_Basic_Class
             get { return _StaffCategory; }
             set
             {
-                if (value == "Doctor" || value == "Nurse" || value == "Wardboy" || value == "Brother" || value == "Technician")
-                {
-
-                    _StaffCategory = value;
-                }
-                else
-                {
-                    throw new Exception("Entered Incorrect Category ");
-                }
-
-
-
-
+                _StaffCategory = value;
             }
+
         }
+        
         private string _Education = string.Empty;
         public string Education
         {
