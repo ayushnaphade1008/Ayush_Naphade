@@ -4,20 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AS_Inheritance.Logic
+namespace HospitalManagementSystem.Logic
 {
     public class DoctorLogic
     {
         Model.Doctor doctor = new Model.Doctor();
         Model.Staff staff = new Model.Staff();
+
+
+        //method for doctor registration
         public void RegisterDoctor()
         {
             Console.WriteLine("******Registration process start******");
             doctor.StaffType = 1;
             Console.WriteLine("Enter Staff Id");
             doctor.StaffId = Convert.ToInt32(Console.ReadLine());
-            
-   
 
             Console.WriteLine("Enter Staff Person Name");
             doctor.StaffName = Console.ReadLine();
@@ -64,23 +65,12 @@ namespace AS_Inheritance.Logic
             Console.WriteLine("Enter Number of Operation Performed");
             doctor.NumberOfOperation = Convert.ToInt32(Console.ReadLine());
 
-            staff.RegisterNewStaff(1,doctor);
-        }
 
-        public Model.Staff ShowDoctor(int staffid)
-        {
-            Model.Staff staffdoctor =new Model.Staff();
-            foreach (var kvp in staff.DictionaryStaff)
-            {
-                if (kvp.Key == staffid)
-                {
-                    staffdoctor = staff.DictionaryStaff[kvp];
-                    break;
-                }
-            }
-            return staffdoctor;
             
         }
+
         
+
     }
 }
+

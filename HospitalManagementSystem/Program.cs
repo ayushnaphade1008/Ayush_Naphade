@@ -1,20 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using AS_Inheritance.Logic;
-using AS_Inheritance.Model;
+using HospitalManagementSystem.Logic;
+using HospitalManagementSystem.Model;
+
 
 Console.WriteLine("HOSPITAL MANAGEMENT SYSTEM USING DICTIONARY TO COLLECT INFORMATION");
-Doctor doctor = new Doctor();
-Nurse nurse = new Nurse();
-Staff staff = new Staff();
-Technician technician = new Technician();
-DoctorLogic drlogic = new DoctorLogic();
-NurseLogic nslogic = new NurseLogic();
-TechnicianLogic techlogic = new TechnicianLogic();
 bool choice = true;
-
 do
 {
-    Console.ReadLine();
     Console.WriteLine("Insert the Operation you want to Perform");
     Console.WriteLine("1.Add New Registration in Record");
     Console.WriteLine("2.Update Data in Record");
@@ -24,19 +16,26 @@ do
     Console.WriteLine("6.ListOfDoctorBasedonSpecialization");
 
     int operation = Convert.ToInt32(Console.ReadLine());
-
-   
     switch (operation)
     {
         case 1:
-           
-            }
-            var staffs1 = drlogic.RegisterNewStaff(Staffid, doctor);
-            foreach (var kvp in staffs1)
+            Console.WriteLine("Registration \n 1.Doctor \n 2.Nurse \n 3.Technician");
+            int SelectCategory = Convert.ToInt32(Console.Read());
+            switch (SelectCategory)
             {
-                Console.WriteLine($" StaffId={Staffid} \n StaffName={doctor.StaffName} \n Email={doctor.Email} \n Contact Number={doctor.ContactNo} \n Education={doctor.Education} \n ShiftTimeStart={doctor.ShiftStartTime} \n ShiftTimeEnd={doctor.ShiftEndTime} \n Basic Pay={doctor.BasicPay} \n Department={doctor.DeptName} \n Gender={doctor.Gender} \n DateOfBirth={doctor.DateOfBirth} \n Specialization={doctor.Education} \n Experience={doctor.Fees} \n Patient Checked={doctor.PatientChecked} \n Operation Performed={doctor.NumberOfOperation}");
+                case 1:
 
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                default:
+                    Console.WriteLine("Select proper Operation");
+                    break;
             }
+
+
             /*  case 2:
                   Console.WriteLine("Registration process Begins for Nurse");
 
@@ -289,7 +288,7 @@ do
         */
 
             break;
-    case 3:
+        case 3:
             Console.WriteLine("******Deletion process start******");
             Console.WriteLine("1.Deletion for Doctor");
             Console.WriteLine("2.Deletion for Nurse");
@@ -321,26 +320,27 @@ do
                    Console.WriteLine($"StaffID:{s.StaffId}  StaffName:{s.StaffName}  Email:{s.Email}  DeptName:{s.DeptName}  Gender:{s.Gender}  DOB:{s.DateOfBirth}  StaffCategry:{s.StaffCategory}  Staff Education:{s.Education}  ContactNo:{s.ContatNo}");
                } */
             break;
-    case 4:
-        /* var staffs = logic.GetAllStaff();
-        foreach (var s in staffs)
-        {
-            Console.WriteLine($"StaffID:{s.StaffId}  StaffName:{s.StaffName}  Email:{s.Email}  DeptName:{s.DeptName}  Gender:{s.Gender}  DOB:{s.DateOfBirth}  StaffCategry:{s.StaffCategory}  Staff Education:{s.Education}  ContactNo:{s.ContatNo}");
-        } */
+        case 4:
+            /* var staffs = logic.GetAllStaff();
+            foreach (var s in staffs)
+            {
+                Console.WriteLine($"StaffID:{s.StaffId}  StaffName:{s.StaffName}  Email:{s.Email}  DeptName:{s.DeptName}  Gender:{s.Gender}  DOB:{s.DateOfBirth}  StaffCategry:{s.StaffCategory}  Staff Education:{s.Education}  ContactNo:{s.ContatNo}");
+            } */
 
-        break;
-    case 5:
-        //staff = logic.GetStaffIncomeById(1);
+            break;
+        case 5:
+            //staff = logic.GetStaffIncomeById(1);
 
 
-        break;
-    case 6:
-        break;
-   
+            break;
+        case 6:
+            break;
+
 
         default:
             break;
-
     }
 
-} while (choice == true); 
+
+
+} while (choice == true);

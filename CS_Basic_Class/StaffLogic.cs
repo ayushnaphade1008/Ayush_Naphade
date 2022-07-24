@@ -19,11 +19,11 @@ namespace CS_Basic_Class
             // COllection Initializer (C# 3.0)
             staffs = new List<Staff>()
             {
-                /* Object Initializer, provide the object has public properties
-                new Staff() {StaffId=1,StaffName="Ajay",Email="ajay@myhosp.com", DeptName="Cancer",Gender="Male",DateOfBirth= new DateTime(1976, 8, 7),StaffCategory="Doctor",Education="MBBS",ContatNo=7747474 },
+              //  Object Initializer, provide the object has public properties
+                new Staff() {StaffId=1,StaffName="Ajay",Email="ajay@myhosp.com", DeptName="Cancer",Gender="Male",DateOfBirth= new DateTime(1976, 8, 7),StaffCategory="Doctor",Education="MBBS",ContatNo="7747474" },
 
-                new Staff() {StaffId=2,StaffName="KIshan",Email="kishan@myhosp.com", DeptName="Heart",Gender="Male",DateOfBirth= new DateTime(1976, 9, 7),StaffCategory="Brother",Education="DMLT",ContatNo=7747499 },
-*/
+                new Staff() {StaffId=2,StaffName="KIshan",Email="kishan@myhosp.com", DeptName="Heart",Gender="Male",DateOfBirth= new DateTime(1976, 9, 7),StaffCategory="Brother",Education="DMLT",ContatNo="7747499" },
+
             };
         }
 
@@ -49,9 +49,8 @@ namespace CS_Basic_Class
                         item.StaffCategory = staff.StaffCategory;
                         item.DateOfBirth = staff.DateOfBirth;
                         item.ContatNo = staff.ContatNo;
-
                         break;
-                    }
+                    }               
                 }
             }
             else

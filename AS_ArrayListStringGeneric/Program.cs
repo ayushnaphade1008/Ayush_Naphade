@@ -23,7 +23,7 @@ list_str.Add("Omkarkulkarni");
 list_str.Add("Aditysambare");
 list_str.Add("Muskan");
 list_str.Add("Ayush");
-string NumofTime = "Repeat";
+
 
 List<int> list_array = new List<int>();
 list_array.Add(22);
@@ -44,11 +44,12 @@ list_array.Add(18);
 
 
 String temp = String.Empty;
+string NumofTime = "Repeat";
 do
 {
     Console.WriteLine();
-    Console.WriteLine("1.Sort String Array bases on index"+ "\n"
-        + "2.Reverse String Array bases on index" + "\n"
+    Console.WriteLine("1.Sort String Array bases on length"+ "\n"
+        + "2.Reverse String Array bases on length" + "\n"
         +"3.Print Index Of Even Number" + "\n"+ 
         "4.Print Index of Odd Number" + "\n" +
         "5.Print Inde of Prime Number" + "\n"+ "6.Strings that contains 'a' in it at any position in that string" +
@@ -69,11 +70,11 @@ do
     switch (choice)
     {
         case 1:
-            for (int ind = 0; ind < str_1.Length-1; ind++)
+            for (int ind = 0; ind < str_1.Length; ind++)
             {
                 for (int j = ind + 1; j < str_1.Length; j++)
                 {
-
+                    //str a,str b = str b ,str a
                     if (str_1[ind].Length > str_1[j].Length)
                     {
                         temp = str_1[ind];
@@ -90,7 +91,7 @@ do
 
             break;
         case 2:
-            for (int ind = 0; ind < str_1.Length - 1; ind++)
+            for (int ind = 0; ind < str_1.Length; ind++)
             {
                 for (int j = ind + 1; j < str_1.Length; j++)
                 {
@@ -194,7 +195,7 @@ do
             break;
         case 8:
             Console.WriteLine("repeated strings in an array and print them");
-            Array.Sort(str_1);
+           // Array.Sort(str_1);
             int temp_1 = 0;
                       
             for (int ind = 0; ind < str_1.Length-1;)
@@ -202,7 +203,7 @@ do
                 int count = 0;
               
                     while(str_1[temp_1]== str_1[ind])
-                    {                   
+                    {                
                     count++;
                     ind++;
                     }
@@ -218,7 +219,7 @@ do
             Array.Sort(int_1);
             int temp_2 = 0;
 
-            for (int ind = 0; ind < str_1.Length - 1;)
+            for (int ind = 0; ind < str_1.Length ;)
             {
                 int count = 0;
 
@@ -232,7 +233,7 @@ do
             }
             break;
         case 10:
-            for (int ind = 0; ind < list_str.Count - 1; ind++)
+            for (int ind = 0; ind < list_str.Count ; ind++)
             {
                 for (int j = ind + 1; j < list_str.Count; j++)
                 {
@@ -252,7 +253,7 @@ do
             }
           break;
         case 11:
-            for (int ind = 0; ind < list_str.Count - 1; ind++)
+            for (int ind = 0; ind < list_str.Count ; ind++)
             {
                 for (int j = ind + 1; j < list_str.Count; j++)
                 {
@@ -387,19 +388,4 @@ do
 }
 while (NumofTime=="Repeat");
 
-/*Print String Array
-static void PrintstringArray(String[] StrArray)
-{
-    foreach (string str in StrArray)
-    {
-        Console.Write(str + " ");
-    }
-}
-static void PrintArray(int[] Array)
-{
-    for(int i = 0; i < Array.Length; i++)
-    {
-        Console.Write(Array[i] + " ");
-    }
-}
-*/
+
